@@ -1,19 +1,19 @@
-@extends('layouts/base')
+@extends('layouts/form')
 
 @section('title','Articles')
 
 @section('container')
     <div class="container">
 
-        <form method="post" action="/article/store">
+        <form method="post" action="{{url('/article/store')}}">
             @csrf
             <div class="form-group">
-                <label for="nama">Judul</label>
+                <label for="nama">Title</label>
                 <input
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="Enter judul"
+                    placeholder="Enter title"
                     name="name">
                 </div>
                 <div class="form-group">

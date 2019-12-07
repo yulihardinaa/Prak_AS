@@ -1,4 +1,4 @@
-@extends('layouts/base')
+@extends('layouts/form')
 
 @section('title','Articles')
 

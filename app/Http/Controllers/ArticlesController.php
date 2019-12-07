@@ -40,7 +40,7 @@ class ArticlesController extends Controller
     public function store(Request $request)
     {
         $article = Article::create($request->all());
-        return redirect('/article')->with('success','Data berhasil disimpan');
+        return redirect('/article')->with('sukses','Data berhasil disimpan');
     }
 
     /**
@@ -99,6 +99,6 @@ class ArticlesController extends Controller
     public function delete($id){
         $article = Article::find($id);
         $article->delete();
-        return redirect('/article')->with('success','data berhasil dihapus');
+        return redirect('/article')->with('sukses','data berhasil dihapus');
     }
 }
